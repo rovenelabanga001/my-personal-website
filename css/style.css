@@ -1,3 +1,118 @@
-body {
-  background: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  padding: 30px 100px;
+  background-color: rgba(255, 255, 255, 0.959);
+  position: fixed;
+  z-index: 1000;
+}
+header h2 {
+  font-size: 50px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+header nav li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header nav li:hover {
+  color: rgb(101, 101, 232);
+}
+header #cv-button {
+  background-color: rgb(101, 101, 232);
+  padding: 15px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header #cv-button:hover {
+  box-shadow: 2px 3px 3px 3px rgb(233, 231, 231);
+}
+#hero {
+  padding-top: 100px;
+}
+#hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#hero-content .hero-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+  gap: 10px 30px;
+}
+#hero-content .hero-content-left h5 {
+  font-size: 30px;
+  color: rgb(80, 80, 212);
+}
+#hero-content .hero-content-left h1 {
+  font-size: 50px;
+}
+#hero-content .hero-content-left p {
+  color: grey;
+  font-size: 20px;
+}
+#hero-content .hero-content-left p span {
+  color: black;
+  font-weight: 600;
+}
+#hero-content .hero-content-left img {
+  width: 50px;
+  height: 50px;
+  font-weight: weight;
+}
+#hero-content .hero-content-right {
+  padding: 50px;
+}
+#hero-content .hero-content-right img {
+  width: 300px;
+  height: 300px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 80px 30px;
+  margin-top: 30px;
+}
+.buttons > .button-btn {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  width: 120px;
+  transition: 0.3s;
+}
+.buttons > .button-btn:hover {
+  box-shadow: 1px 2px 2px 2px rgb(233, 231, 231);
+}
+.buttons > #contact-me-btn {
+  background-color: rgb(101, 101, 232);
+}
+.buttons > #learn-more-btn {
+  background-color: rgb(3, 3, 12);
 }
