@@ -3,6 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+p {
+  line-height: 1.6;
+  color: gray;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -56,6 +70,7 @@ header #cv-button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 #hero-content .hero-content-left {
   display: flex;
@@ -63,8 +78,13 @@ header #cv-button:hover {
   justify-content: center;
   padding: 100px;
   gap: 10px 30px;
+  width: 47%;
 }
-#hero-content .hero-content-left h5 {
+.hero-content-left .info {
+  display: flex;
+  align-items: center;
+}
+.hero-content-left .info h5 {
   font-size: 30px;
   color: rgb(80, 80, 212);
 }
@@ -86,16 +106,17 @@ header #cv-button:hover {
 }
 #hero-content .hero-content-right {
   padding: 50px;
+  width: 47%;
 }
 #hero-content .hero-content-right img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 .buttons {
   display: flex;
   flex-direction: row;
   gap: 80px 30px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .buttons > .button-btn {
   padding: 15px;
@@ -115,4 +136,53 @@ header #cv-button:hover {
 }
 .buttons > #learn-more-btn {
   background-color: rgb(3, 3, 12);
+}
+#about-me {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+  gap: 20px;
+  width: 100%;
+}
+#about-me .about-me-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 47%;
+}
+#about-me .about-me-info h2 {
+  color: rgb(101, 101, 232);
+  font-size: 15px;
+  font-weight: 500;
+}
+#about-me .about-me-info h3 {
+  font-size: 40px;
+}
+#about-me .about-me-info a {
+  color: blue;
+}
+#about-me .social-media {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  padding: 10px 20px;
+  gap: 30px;
+}
+#about-me .social-media h2 {
+  font-size: 40px;
+}
+.social-media .social-media-links {
+  display: flex;
+  gap: 20px;
+}
+.social-media .social-media-links i {
+  color: gray;
+  font-size: 20px;
+  padding: 10px;
+  background: rgba(241, 241, 243, 0.747);
+  border-radius: 50px;
+}
+.social-media .social-media-links i:hover {
+  background-color: rgba(46, 46, 229, 0.772);
+  color: white;
 }
