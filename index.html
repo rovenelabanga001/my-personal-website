@@ -21,8 +21,8 @@
         <nav>
           <li>Home</li>
           <li>About</li>
-          <li>Projects</li>
           <li>Services</li>
+          <li>Projects</li>
           <li>Contact</li>
         </nav>
         <button id="cv-button">Download CV</button>
@@ -36,20 +36,22 @@
             <img src="./images/hand_wave.png" alt="hand-wave" />
             <h5>I am</h5>
           </div>
-          <p>Professional <span>Software Engineer</span></p>
+          <p>A Professional <span>Software Engineer</span></p>
           <p>
-            A software engineer based in Nairobi, Kenya that designs, develops,
-            and maintains software systems, solving technical challenges through
-            coding, testing, and collaboration to create efficient applications
-            for diverse industries and clients
+            Based in Nairobi, Kenya. I design, develop, and maintain software
+            systems, solve technical challenges through coding, testing, and
+            collaborating to create efficient applications for diverse
+            industries and clients
           </p>
+        </div>
+        <div class="hero-content-right">
+          <div>
+            <img src="./images/img-hero.jpg" alt="image 1" />
+          </div>
           <div class="buttons">
             <button id="contact-me-btn" class="button-btn">Contact Me</button>
             <button id="learn-more-btn" class="button-btn">Learn More</button>
           </div>
-        </div>
-        <div class="hero-content-right">
-          <img src="./images/hero-img.png" alt="image 1" />
         </div>
       </div>
     </section>
@@ -83,13 +85,14 @@
       </div>
     </section>
     <section id="services">
-      <div>
+      <div class="services-container">
         <h5>What I offer?</h5>
         <h2 id="main">My Services</h2>
         <p>
           I offer a variety Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Molestiae, inventore. Lorem ipsum dolor sit amet consectetur
+          elit.
         </p>
+        <p>Molestiae, inventore. Lorem ipsum dolor sit amet consectetur</p>
         <div class="services-details-container">
           <div class="service-type">
             <div class="service-logo">
@@ -129,6 +132,52 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="contact-me">
+      <h3>Contact Me</h3>
+      <h2>Have a project or business in mind?</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, sunt.
+      </p>
+      <form action="POST" id="contact-me" autocomplete="off">
+        <div class="input-data">
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            required
+            name="enterName"
+          />
+          <input
+            type="text"
+            placeholder="Company (optional)"
+            name="enterCompanyName"
+          />
+        </div>
+        <div class="input-data">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            name="enterEmail"
+          />
+          <input
+            type="number"
+            placeholder="Phone Number"
+            required
+            name="phoneNumber"
+          />
+        </div>
+        <div>
+          <textarea
+            name="enterMessage"
+            id="txt-area"
+            placeholder="Tell me about your project"
+          ></textarea>
+        </div>
+        <div class="contact-me-btn-container">
+          <button type="submit" id="contact-me">Contact Me</button>
+        </div>
+      </form>
     </section>
     <script src="./js/script.js"></script>
   </body>

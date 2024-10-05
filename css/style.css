@@ -105,12 +105,18 @@ header #cv-button:hover {
   font-weight: weight;
 }
 #hero-content .hero-content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
   width: 47%;
 }
 #hero-content .hero-content-right img {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .buttons {
   display: flex;
@@ -210,7 +216,7 @@ header #cv-button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 70px;
   width: 100%;
 }
 .services-details-container .service-type {
@@ -256,4 +262,69 @@ header #cv-button:hover {
   margin-top: 10px;
   font-size: 15px;
   font-size: 700;
+}
+#contact-me {
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact-me h3 {
+  color: rgb(101, 101, 232);
+  font-size: 25px;
+}
+#contact-me h2 {
+  font-size: 40px;
+}
+#contact-me form .input-data {
+  display: flex;
+}
+#contact-me form .input-data input {
+  width: 400px;
+  height: 50px;
+  margin: 0 20px 30px;
+  background: rgba(238, 236, 236, 0.977);
+  border: none;
+  border-bottom: 0px solid transparent;
+  outline: none;
+  padding: 20px;
+  transition: border-bottom 0.3s;
+}
+#contact-me form .input-data input::placeholder {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+#contact-me form .input-data input:focus {
+  border-bottom: 2px solid rgb(101, 101, 232);
+}
+#contact-me form textarea {
+  background: rgba(209, 206, 206, 0.342);
+  width: 840px;
+  height: 100px;
+  border: none;
+  border-bottom: 0px solid transparent;
+  outline: none;
+  padding: 20px;
+  transition: border-bottom 0.3s;
+  font-family: "Roboto", sans-serif;
+}
+#contact-me form textarea:focus {
+  border-bottom: 2px solid rgb(101, 101, 232);
+}
+#contact-me form textarea::placeholder {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+#contact-me .contact-me-btn-container {
+  margin-top: 50px;
+}
+#contact-me .contact-me-btn-container #contact-me {
+  width: 60px;
+  height: 40px;
+  background: rgb(101, 101, 232);
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
 }
