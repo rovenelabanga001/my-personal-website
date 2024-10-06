@@ -325,6 +325,7 @@ header #cv-button:hover {
   background: rgb(101, 101, 232);
   color: white;
   border: none;
+  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
 }
