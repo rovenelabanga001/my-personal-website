@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My personal website</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,15 +16,23 @@
     />
   </head>
   <body>
-    <section id="page-header">
+    <section id="page-header" class="page-padding">
       <header>
+        <button id="menu-toggle">
+          <i class="fa-solid fa-list"></i>
+        </button>
         <h2>Portfolio</h2>
-        <nav>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+        <nav id="navbar">
+          <ul>
+            <button id="close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
         </nav>
         <button id="cv-button">Download CV</button>
       </header>
@@ -55,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section id="about-me">
+    <section id="about-me" class="page-padding">
       <div class="about-me-info">
         <h2>ABOUT ME</h2>
         <h3>Code, Create, Collaborate, Innovate!</h3>
@@ -84,7 +93,7 @@
         </div>
       </div>
     </section>
-    <section id="services">
+    <section id="services" class="page-padding">
       <div class="services-container">
         <h5>What I offer?</h5>
         <h2 id="main">My Services</h2>
@@ -175,7 +184,7 @@
           ></textarea>
         </div>
         <div class="contact-me-btn-container">
-          <button type="submit" id="contact-me">Contact Me</button>
+          <button type="submit" id="contact-me-btn">Contact Me</button>
         </div>
       </form>
     </section>
