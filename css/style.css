@@ -25,6 +25,7 @@ p {
   width: 100%;
   height: 130px;
   top: 0;
+  padding: 30px 70px;
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.959);
 }
@@ -32,6 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 40px 0 0;
 }
 header h2 {
   font-size: 50px;
@@ -59,12 +61,13 @@ header nav ul button#close {
 header nav ul li {
   list-style-type: none;
   font-size: 20px;
+  color: rgb(101, 101, 232);
   font-weight: 600px;
   cursor: pointer;
   transition: 0.3s;
 }
 header nav li:hover {
-  color: rgb(101, 101, 232);
+  text-decoration: underline;
 }
 header #cv-button {
   background-color: rgb(101, 101, 232);
@@ -82,7 +85,7 @@ header #cv-button:hover {
   box-shadow: 2px 3px 3px 3px rgb(233, 231, 231);
 }
 #hero {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 #hero-content {
   display: flex;
@@ -245,7 +248,7 @@ header #cv-button:hover {
   height: 250px;
   padding: 20px;
   gap: 20px;
-  box-shadow: 1px 1px 1px 1px rgb(172, 170, 170);
+  box-shadow: 3px 3px 5px 5px rgb(172, 170, 170);
   border-radius: 5px;
   transition: 0.3s;
 }
@@ -285,6 +288,7 @@ header #cv-button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   margin-bottom: 100px;
 }
 #contact-me h3 {
@@ -294,10 +298,16 @@ header #cv-button:hover {
 #contact-me h2 {
   font-size: 40px;
 }
-#contact-me form .input-data {
+#contact-me form#contact-me-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact-me form#contact-me-form .input-data {
   display: flex;
 }
-#contact-me form .input-data input {
+#contact-me form#contact-me-form .input-data input {
   width: 400px;
   height: 50px;
   margin: 0 20px 30px;
@@ -308,14 +318,19 @@ header #cv-button:hover {
   padding: 20px;
   transition: border-bottom 0.3s;
 }
-#contact-me form .input-data input::placeholder {
+#contact-me form#contact-me-form .input-data input::placeholder {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
-#contact-me form .input-data input:focus {
+#contact-me form#contact-me-form .input-data input:focus {
   border-bottom: 2px solid rgb(101, 101, 232);
 }
-#contact-me form textarea {
+#contact-me form#contact-me-form .textarea-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-me form#contact-me-form .textarea-div textarea {
   background: rgba(209, 206, 206, 0.342);
   width: 840px;
   height: 100px;
@@ -326,17 +341,22 @@ header #cv-button:hover {
   transition: border-bottom 0.3s;
   font-family: "Roboto", sans-serif;
 }
-#contact-me form textarea:focus {
+#contact-me form#contact-me-form textarea:focus {
   border-bottom: 2px solid rgb(101, 101, 232);
 }
-#contact-me form textarea::placeholder {
+#contact-me form#contact-me-form textarea::placeholder {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
 #contact-me .contact-me-btn-container {
   margin-top: 50px;
+  justify-self: center;
+  align-self: center;
 }
-#contact-me .contact-me-btn-container #contact-me-btn {
+#contact-me
+  form#contact-me-form
+  .contact-me-btn-container
+  button#contact-me-btn {
   width: 120px;
   height: 60px;
   background: rgb(101, 101, 232);
